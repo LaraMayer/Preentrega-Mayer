@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaristo Impresiones 3D</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Evaristo Impresiones 3D</h1>
+    <nav aria-label="Menú principal">
+      <ul class="nav justify-content-center my-3">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <!-- Sección de bienvenida -->
+    <section id="inicio" aria-label="Sección de bienvenida" class="mb-5">
+      <h2>Personalizá tus ideas en 3D</h2>
+      <p>Impresiones de calidad, modelos únicos, y asesoramiento personalizado.</p>
+    </section>
+
+    <!-- Productos destacados -->
+    <section id="productos" aria-label="Productos destacados" class="mb-5">
+      <h2>Productos destacados</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <article class="card h-100">
+            <img src="img/imagen-desmpolvador-yerba.jpg" class="card-img-top" alt="Despolvador de yerba mate">
+            <div class="card-body">
+              <h5 class="card-title">Despolvador de yerba</h5>
+              <p class="card-text">Despolvador impreso en 3D, ideal para separar el polvo fino de la yerba y mejorar el sabor del mate.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 mb-4">
+          <article class="card h-100">
+            <img src="img/imagen-joystick.jpg" class="card-img-top" alt="Soporte para joystick">
+            <div class="card-body">
+              <h5 class="card-title">Soporte para joystick</h5>
+              <p class="card-text">Diseñado para mantener tu control seguro y ordenado. Compatible con distintos modelos, resistente y compacto.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 mb-4">
+          <article class="card h-100">
+            <img src="img/imagen-pawpatrol.jpg" class="card-img-top" alt="Mate desmontable Paw Patrol Skye">
+            <div class="card-body">
+              <h5 class="card-title">Mate de Paw Patrol</h5>
+              <p class="card-text">Mate desmontable de Paw Patrol con diseño de Skye. Colorido, seguro y fácil de limpiar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="nosotros" aria-label="Sección sobre nosotros" class="mb-5">
+      <h2>Sobre nosotros</h2>
+      <p>En Evaristo Impresiones 3D damos vida a ideas mediante la impresión 3D. Somos un emprendimiento que apuesta por la creatividad, la personalización y el diseño funcional. Cada pieza que hacemos combina tecnología, detalle y compromiso, buscando siempre soluciones prácticas y originales para nuestros clientes.</p>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" aria-label="Formulario de contacto" class="mb-5">
+      <h2>Contacto</h2>
+      <form action="#" method="post" novalidate class="mx-auto" style="max-width: 600px;">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-block">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Evaristo Impresiones 3D</p>
+    <p>
+      Seguinos en
+      <a href="https://www.instagram.com/evaristo.3d?igsh=MWdicmM0YTV4a3J3OA==" target="_blank" rel="noopener noreferrer" class="text-warning font-weight-bold">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
