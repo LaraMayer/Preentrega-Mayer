@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evaristo - Impresiones 3D</title>
+  <!-- CSS de Bootstrap -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous" 
+  />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-3">
+    <h1 class="mb-0">Evaristo Impresiones 3D</h1>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Demo Modelo de Caja y Posiciones -->
+    <section class="d-flex flex-column flex-md-row justify-content-around align-items-center mb-5">
+      
+      <article class="box-model-wrapper text-center">
+        <h2 class="mb-3">Modelo Caja CSS</h2>
+        <div class="box-model-demo">Contenido ejemplo del modelo caja</div>
+      </article>
+
+      <article class="position-wrapper mt-4 mt-md-0">
+        <h2 class="mb-3">Posicionamiento CSS</h2>
+        <div class="position-demo bg-light p-3 border rounded position-relative">
+          <div class="position-absolute top-0 start-0 bg-primary text-white p-2 rounded">Absolute</div>
+          <div class="position-relative bg-warning p-2 mt-5 rounded">Relative</div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Ejemplo elementos en línea -->
+    <section class="d-flex justify-content-between flex-wrap align-items-start mb-5">
+      <span class="inline-sample me-3">Elemento Inline A</span>
+      <span class="inline-sample me-3">Elemento Inline B</span>
+      <span class="inline-sample">Elemento Inline C</span>
+    </section>
+
+    <!-- Flexbox avanzado -->
+    <section class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+      <div class="flex-item bg-success text-white p-3" style="order: 2; flex-grow: 1;">Ítem Verde</div>
+      <div class="flex-item bg-danger text-white p-3" style="order: 1; flex-grow: 2;">Ítem Rojo</div>
+      <div class="flex-item bg-info text-white p-3" style="order: 3; flex-grow: 1;">Ítem Azul</div>
+    </section>
+
+    <!-- Layout con Grid -->
+    <section class="grid-layout mt-5">
+      <header class="grid-header rounded">Encabezado</header>
+      <aside class="grid-sidebar rounded">Barra lateral</aside>
+      <article class="grid-content rounded">Contenido principal</article>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2025 Evaristo Impresiones 3D</small>
+  </footer>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

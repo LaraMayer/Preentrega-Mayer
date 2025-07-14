@@ -1,50 +1,56 @@
-/* Reset básico y fuente general */
+/* Reset básico y tipografía general */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* Encabezado */
+/* Cabecera */
 header {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #222;
+  color: #fff;
   padding: 1.5rem 0;
   text-align: center;
 }
 
 /* Navegación */
 nav ul {
-  padding-left: 0;
-  margin-bottom: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-  color: white !important;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #ffcc00 !important;
+  color: #ffc107 !important;
   outline: none;
 }
 
-/* Secciones */
+/* Secciones principales */
 section {
-  background-color: white;
+  background-color: #fff;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Productos - Tarjetas */
+/* Productos - tarjetas */
 .contenedor-productos {
   display: flex;
   flex-wrap: wrap;
@@ -54,91 +60,98 @@ section {
 
 .contenedor-productos article {
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
   padding: 1rem;
-  width: 100%;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contenedor-productos article:hover,
 .contenedor-productos article:focus-within {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 .contenedor-productos img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 /* Formularios */
 form {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 label {
   font-weight: 600;
-  margin-top: 1rem;
   display: block;
+  margin-top: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.3rem;
   font-family: inherit;
   font-size: 1rem;
   resize: vertical;
   transition: border-color 0.3s ease;
 }
 
-input:focus, textarea:focus {
-  border-color: #1e1e1e;
+input:focus,
+textarea:focus {
+  border-color: #222;
   outline: none;
 }
 
-/* Botón de envío */
+/* Botón enviar */
 button {
   margin-top: 1rem;
-  background-color: #1e1e1e;
-  color: white;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
   font-weight: 700;
   border: none;
-  border-radius: 4px;
-  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 button:hover,
 button:focus {
-  background-color: #ffcc00;
-  color: #1e1e1e;
+  background-color: #ffc107;
+  color: #222;
   outline: none;
 }
 
 /* Pie de página */
 footer {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #222;
+  color: #fff;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
 }
 
 footer a {
-  color: #ffcc00;
-  font-weight: bold;
+  color: #ffc107;
+  font-weight: 600;
   text-decoration: none;
-  transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.25s ease;
 }
 
 footer a:hover,
@@ -147,21 +160,75 @@ footer a:focus {
   outline: none;
 }
 
-/* Responsive - Bootstrap ya hace gran parte, pero aquí un extra */
+/* Ejemplo Box Model */
+.box-model-demo {
+  border: 2px solid #333;
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Posiciones */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/* Grid personalizado */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.grid-header {
+  grid-area: header;
+  background-color: #a0c4ff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.grid-sidebar {
+  grid-area: sidebar;
+  background-color: #ffadad;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.grid-content {
+  grid-area: main;
+  background-color: #caffbf;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .contenedor-productos {
     flex-direction: column;
     align-items: center;
   }
-
   .contenedor-productos article {
     max-width: 90%;
   }
-
   form {
     padding: 0 1rem;
   }
-
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main";
+  }
   button {
     padding: 1rem;
   }
