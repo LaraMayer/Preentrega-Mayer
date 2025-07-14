@@ -13,26 +13,33 @@
   <!-- Encabezado -->
   <header class="bg-dark text-white text-center py-3">
     <h1>Evaristo Impresiones 3D</h1>
-    <nav aria-label="Menú principal">
-      <ul class="nav justify-content-center my-3">
-        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#productos">Productos</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Contenido principal -->
   <main class="container my-4">
     <!-- Sección de bienvenida -->
-    <section id="inicio" aria-label="Sección de bienvenida" class="mb-5">
+    <section id="inicio" class="mb-5">
       <h2>Personalizá tus ideas en 3D</h2>
       <p>Impresiones de calidad, modelos únicos, y asesoramiento personalizado.</p>
     </section>
 
     <!-- Productos destacados -->
-    <section id="productos" aria-label="Productos destacados" class="mb-5">
+    <section id="productos" class="mb-5">
       <h2>Productos destacados</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
@@ -40,7 +47,7 @@
             <img src="img/imagen-desmpolvador-yerba.jpg" class="card-img-top" alt="Despolvador de yerba mate">
             <div class="card-body">
               <h5 class="card-title">Despolvador de yerba</h5>
-              <p class="card-text">Despolvador impreso en 3D, ideal para separar el polvo fino de la yerba y mejorar el sabor del mate.</p>
+              <p class="card-text">Separá el polvo fino de la yerba y mejorá tu mate.</p>
             </div>
           </article>
         </div>
@@ -49,32 +56,37 @@
             <img src="img/imagen-joystick.jpg" class="card-img-top" alt="Soporte para joystick">
             <div class="card-body">
               <h5 class="card-title">Soporte para joystick</h5>
-              <p class="card-text">Diseñado para mantener tu control seguro y ordenado. Compatible con distintos modelos, resistente y compacto.</p>
+              <p class="card-text">Ordená tu espacio gamer con estilo.</p>
             </div>
           </article>
         </div>
         <div class="col-md-4 mb-4">
           <article class="card h-100">
-            <img src="img/imagen-pawpatrol.jpg" class="card-img-top" alt="Mate desmontable Paw Patrol Skye">
+            <img src="img/imagen-pawpatrol.jpg" class="card-img-top" alt="Mate Paw Patrol Skye">
             <div class="card-body">
               <h5 class="card-title">Mate de Paw Patrol</h5>
-              <p class="card-text">Mate desmontable de Paw Patrol con diseño de Skye. Colorido, seguro y fácil de limpiar.</p>
+              <p class="card-text">Diseño de Skye, ideal para los más chicos.</p>
             </div>
           </article>
         </div>
       </div>
+
+      <!-- Botón para ver más productos -->
+      <div class="text-center mt-4">
+        <a href="productos.html" class="btn btn-outline-dark">Ver más productos</a>
+      </div>
     </section>
 
     <!-- Sobre nosotros -->
-    <section id="nosotros" aria-label="Sección sobre nosotros" class="mb-5">
+    <section id="nosotros" class="mb-5">
       <h2>Sobre nosotros</h2>
-      <p>En Evaristo Impresiones 3D damos vida a ideas mediante la impresión 3D. Somos un emprendimiento que apuesta por la creatividad, la personalización y el diseño funcional. Cada pieza que hacemos combina tecnología, detalle y compromiso, buscando siempre soluciones prácticas y originales para nuestros clientes.</p>
+      <p>Somos un emprendimiento que apuesta por la creatividad, la personalización y el diseño funcional. Cada pieza combina tecnología, detalle y compromiso.</p>
     </section>
 
     <!-- Formulario de contacto -->
-    <section id="contacto" aria-label="Formulario de contacto" class="mb-5">
+    <section id="contacto" class="mb-5">
       <h2>Contacto</h2>
-      <form action="#" method="post" novalidate class="mx-auto" style="max-width: 600px;">
+      <form action="contacto.html" method="get" class="mx-auto" style="max-width: 600px;">
         <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" class="form-control" required>
@@ -97,8 +109,12 @@
     <p>&copy; 2024 Evaristo Impresiones 3D</p>
     <p>
       Seguinos en
-      <a href="https://www.instagram.com/evaristo.3d?igsh=MWdicmM0YTV4a3J3OA==" target="_blank" rel="noopener noreferrer" class="text-warning font-weight-bold">Instagram</a>
+      <a href="https://www.instagram.com/evaristo.3d" target="_blank" class="text-warning font-weight-bold">Instagram</a>
     </p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
